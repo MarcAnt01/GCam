@@ -397,17 +397,11 @@
     </string-array>
     <string-array name="libs_entries">
         <item>@string/libs_a</item>
-        <item>@string/libs_b</item>
-        <item>@string/libs_c</item>
         <item>@string/libs_d</item>
-        <item>@string/libs_e</item>
     </string-array>
     <string-array name="libs_entryvalues">
         <item>0</item>
         <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
     </string-array>
     <string-array name="pref_sensornoise_ao_entryvalues">
         <item>0</item>

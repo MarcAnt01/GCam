@@ -15,19 +15,7 @@
 
     const/4 v1, 0x1
 
-    if-eq v0, v1, :cond_0
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    const/4 v1, 0x3
-
     if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x4
-
-    if-eq v0, v1, :cond_3
 
     const-string v0, "gcam_jni"
 
@@ -36,25 +24,12 @@
 
     return-void
 
-    :cond_0
-    const-string v0, "mgca_jni_gmm17"
-
-    goto :goto_0
-
-    :cond_1
-    const-string v0, "mgcb_jni_es2"
-
-    goto :goto_0
-
     :cond_2
     const-string v0, "mgcc_jni_x2s"
 
     goto :goto_0
 
-    :cond_3
-    const-string v0, "mgcd_jni_es3.1"
 
-    goto :goto_0
 .end method
 
 .method public constructor <init>()V
