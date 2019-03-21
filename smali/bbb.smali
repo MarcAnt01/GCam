@@ -85,6 +85,30 @@
     goto :goto_0
 
     :cond_2
+    const-string v1, "android.media.action.PHOTOBOOTH"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_7
+
+    const-string v1, "android.media.action.PORTRAIT"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_5
+
+    const-string v1, "android.media.action.NIGHTSIGHT"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
     const-string v1, "android.media.action.IMAGE_CAPTURE"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -100,6 +124,21 @@
     move-result v0
 
     if-eqz v0, :cond_4
+
+    :cond_7
+    sget-object v0, Liur;->i:Liur;
+
+    goto :goto_0
+
+    :cond_5
+    sget-object v0, Liur;->k:Liur;
+
+    goto :goto_0
+
+    :cond_6
+    sget-object v0, Liur;->e:Liur;
+
+    goto :goto_0
 
     :cond_3
     sget-object v0, Liur;->a:Liur;

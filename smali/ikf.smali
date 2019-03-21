@@ -136,12 +136,6 @@
 
     iput-object v1, p0, Likf;->s:Lbba;
 
-    invoke-virtual/range {p12 .. p12}, Lmhd;->b()Z
-
-    move-result v1
-
-    iput-boolean v1, p0, Likf;->t:Z
-
     move/from16 v0, p13
 
     iput-boolean v0, p0, Likf;->f:Z
@@ -228,23 +222,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;	
 
     iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
 
     sget-object v2, Liur;->h:Liur;
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
-
-    sget-object v2, Liur;->p:Liur;
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
-
-    sget-object v2, Liur;->f:Liur;
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -260,6 +242,12 @@
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
+
+    sget-object v2, Liur;->p:Liur;
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     iget-object v1, p0, Likf;->m:Ljava/util/HashMap;
 
     sget-object v2, Liur;->p:Liur;
@@ -271,6 +259,12 @@
     move-result-object v3
 
     invoke-virtual {v1, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
+
+    sget-object v2, Liur;->f:Liur;
+
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     iget-object v1, p0, Likf;->m:Ljava/util/HashMap;
 
@@ -290,7 +284,7 @@
 
     move-result-object v1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     invoke-static {v1, v2}, Lbbb;->a(Landroid/content/Intent;Z)Liur;
 
@@ -312,23 +306,6 @@
     iput v1, p0, Likf;->e:I
 
     :goto_0
-    iget-object v1, p0, Likf;->r:Ljava/util/ArrayList;
-
-    iget v2, p0, Likf;->e:I
-
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    iget-object v2, p0, Likf;->d:Liur;
-
-    if-ne v1, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    :goto_1
-    invoke-static {v1}, Lmhf;->b(Z)V
-
     sget-object v1, Likb;->b:Ljava/lang/String;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -378,11 +355,6 @@
 
     return-void
 
-    :cond_0
-    const/4 v1, 0x0
-
-    goto :goto_1
-
     :pswitch_1
     sget-object v1, Liur;->k:Liur;
 
@@ -399,8 +371,6 @@
 
     iput-object v1, p0, Likf;->d:Liur;
 
-    iget-boolean v1, p0, Likf;->t:Z
-
     const/4 v1, 0x1
 
     iput v1, p0, Likf;->e:I
@@ -408,6 +378,17 @@
     goto :goto_0
 
     :pswitch_3
+    sget-object v1, Liur;->d:Liur;
+
+    iput-object v1, p0, Likf;->d:Liur;
+
+    const/4 v1, 0x1
+
+    iput v1, p0, Likf;->e:I
+
+    goto :goto_0
+
+    :pswitch_4
     sget-object v1, Liur;->p:Liur;
 
     iput-object v1, p0, Likf;->d:Liur;
@@ -432,9 +413,9 @@
 
     :pswitch_data_0
     .packed-switch 0x2
+        :pswitch_4
         :pswitch_3
         :pswitch_2
-        :pswitch_0
         :pswitch_0
         :pswitch_0
         :pswitch_1
