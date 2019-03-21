@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <shortcut android:icon="@drawable/ic_selfie" android:enabled="true" android:shortcutId="selfie" android:shortcutShortLabel="@string/shortcut_selfie_short_label" android:shortcutLongLabel="@string/shortcut_selfie_long_label">
+    <shortcut android:icon="@drawable/ic_selfie2" android:enabled="true" android:shortcutId="selfie" android:shortcutShortLabel="@string/shortcut_selfie_short_label" android:shortcutLongLabel="@string/shortcut_selfie_long_label">
         <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.STILL_IMAGE_CAMERA" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity">
             <extra android:name="android.intent.extra.USE_FRONT_CAMERA" android:value="true" />
         </intent>
     </shortcut>
-    <shortcut android:icon="@drawable/ic_video" android:enabled="true" android:shortcutId="video" android:shortcutShortLabel="@string/shortcut_video_short_label" android:shortcutLongLabel="@string/shortcut_video_long_label">
+    <shortcut android:icon="@drawable/ic_video2" android:enabled="true" android:shortcutId="video" android:shortcutShortLabel="@string/shortcut_video_short_label" android:shortcutLongLabel="@string/shortcut_video_long_label">
         <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.VIDEO_CAMERA" android:targetClass="com.android.camera.CameraVideoShortcutActivity" />
     </shortcut>
-    <shortcut android:icon="@drawable/ic_photobooth" android:enabled="true" android:shortcutId="photobooth" android:shortcutShortLabel="@string/mode_photobooth" android:shortcutLongLabel="@string/mode_photobooth">
-        <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.PHOTOBOOTH" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity">
+    <shortcut android:icon="@drawable/ic_photobooth" android:enabled="false" android:shortcutId="photobooth" android:shortcutShortLabel="@string/shortcut_photobooth_short_label" android:shortcutLongLabel="@string/shortcut_photobooth_short_label">
+        <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.STILL_IMAGE_CAMERA" android:targetClass="com.google.android.apps.camera.photobooth.activity.PhotoboothActivity">
             <extra android:name="android.intent.extra.USE_FRONT_CAMERA" android:value="true" />
         </intent>
     </shortcut>
-    <shortcut android:icon="@drawable/ic_portrait" android:enabled="true" android:shortcutId="portrait" android:shortcutShortLabel="@string/gouda_name" android:shortcutLongLabel="@string/gouda_name">
-        <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.PORTRAIT" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity">
-            <extra android:name="android.intent.extra.USE_FRONT_CAMERA" android:value="true" />
-        </intent>
+    <shortcut android:icon="@drawable/ic_portrait" android:enabled="true" android:shortcutId="portrait" android:shortcutShortLabel="@string/shortcut_portrait" android:shortcutLongLabel="@string/shortcut_portrait">
+        <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.PORTRAIT" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" />
     </shortcut>
     <shortcut android:icon="@drawable/ic_nightsight" android:enabled="true" android:shortcutId="nightsight" android:shortcutShortLabel="@string/cuttlefish_name" android:shortcutLongLabel="@string/cuttlefish_name">
         <intent android:targetPackage="com.google.android.GoogleCamera" android:action="android.media.action.NIGHTSIGHT" android:targetClass="com.google.android.apps.camera.legacy.app.activity.CameraImageActivity" />
