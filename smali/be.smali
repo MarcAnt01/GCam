@@ -1,0 +1,37 @@
+.class final Lbe;
+.super Lbo;
+.source "PG"
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0}, Lbo;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a()F
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lkn;->m(Landroid/view/View;)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic a(F)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-static {v0, p1}, Lkn;->b(Landroid/view/View;F)V
+
+    return-void
+.end method

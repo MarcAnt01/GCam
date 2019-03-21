@@ -1,0 +1,202 @@
+.class public final Lhti;
+.super Ljava/lang/Object;
+.source "PG"
+
+
+# instance fields
+.field public final a:Loez;
+
+.field public final b:Loez;
+
+.field public final c:Loez;
+
+.field public final d:Loez;
+
+.field public final e:Loez;
+
+.field public final f:Loez;
+
+.field public final g:Loez;
+
+.field public final h:Loez;
+
+.field public final i:Loez;
+
+.field public final j:Loez;
+
+.field public final k:Loez;
+
+.field public final l:Loez;
+
+.field public final m:Loez;
+
+
+# direct methods
+.method public constructor <init>(Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;Loez;)V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    invoke-static {p1, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->j:Loez;
+
+    const/4 v0, 0x2
+
+    invoke-static {p2, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->b:Loez;
+
+    const/4 v0, 0x3
+
+    invoke-static {p3, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->g:Loez;
+
+    const/4 v0, 0x4
+
+    invoke-static {p4, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->f:Loez;
+
+    const/4 v0, 0x5
+
+    invoke-static {p5, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->h:Loez;
+
+    const/4 v0, 0x6
+
+    invoke-static {p6, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->m:Loez;
+
+    const/4 v0, 0x7
+
+    invoke-static {p7, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->d:Loez;
+
+    const/16 v0, 0x8
+
+    invoke-static {p8, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->a:Loez;
+
+    const/16 v0, 0x9
+
+    invoke-static {p9, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->c:Loez;
+
+    const/16 v0, 0xa
+
+    invoke-static {p10, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->i:Loez;
+
+    const/16 v0, 0xb
+
+    invoke-static {p11, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->l:Loez;
+
+    const/16 v0, 0xc
+
+    invoke-static {p12, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->e:Loez;
+
+    const/16 v0, 0xd
+
+    invoke-static {p13, v0}, Lhti;->a(Ljava/lang/Object;I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Loez;
+
+    iput-object v0, p0, Lhti;->k:Loez;
+
+    return-void
+.end method
+
+.method public static a(Ljava/lang/Object;I)Ljava/lang/Object;
+    .locals 3
+
+    if-nez p0, :cond_0
+
+    new-instance v0, Ljava/lang/NullPointerException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const/16 v2, 0x5d
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v2, "@AutoFactory method argument is null but is not marked @Nullable. Argument index: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    return-object p0
+.end method

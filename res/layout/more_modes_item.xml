@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/more_modes_item" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center|top" android:layout_gravity="center|top" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="center|top" android:layout_gravity="center|top" android:id="@id/mode_icon" android:background="@drawable/more_modes_icon_circle" android:padding="@dimen/more_modes_icon_padding" android:layout_width="@dimen/more_modes_icon_diameter" android:layout_height="@dimen/more_modes_icon_diameter" />
+        <ImageView android:gravity="center|right|top" android:layout_gravity="center|right|top" android:id="@id/notification_dot" android:background="@drawable/notification_dot" android:visibility="gone" android:layout_width="@dimen/notification_dot_shadow_size" android:layout_height="@dimen/notification_dot_shadow_size" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/more_modes_font_size" android:textColor="@color/more_modes_name_color" android:gravity="center|top" android:layout_gravity="center|top" android:id="@id/mode_name" android:background="@android:color/transparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/more_modes_name_height" android:layout_marginLeft="@dimen/more_modes_name_side_margin" android:layout_marginTop="@dimen/more_modes_name_top_margin" android:layout_marginRight="@dimen/more_modes_name_side_margin" android:selectAllOnFocus="false" android:fontFamily="@font/google_sans_medium" />
+</LinearLayout>
